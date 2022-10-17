@@ -1062,7 +1062,7 @@ dependencies = [
  "log",
  "openssl",
  "picky-asn1-der 0.3.1",
- "picky-asn1-x509",
+ "picky-asn1-x509 0.8.0",
  "pretty_env_logger",
  "reqwest",
  "rust-ini",
@@ -1401,6 +1401,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "picky-asn1"
+version = "0.6.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2b7a3f07db0e5b22727979a992df18c78170c7c30279ab4149a395c0c3843832"
+dependencies = [
+ "oid",
+ "serde",
+ "serde_bytes",
+]
+
+[[package]]
 name = "picky-asn1-der"
 version = "0.2.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1432,6 +1443,19 @@ dependencies = [
  "oid",
  "picky-asn1 0.3.3",
  "picky-asn1-der 0.2.5",
+ "serde",
+]
+
+[[package]]
+name = "picky-asn1-x509"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "25ffcd92e3f788f0f76506f3b86310876cc0014ade835d68a6365ee0fd1009dc"
+dependencies = [
+ "base64",
+ "oid",
+ "picky-asn1 0.6.0",
+ "picky-asn1-der 0.3.1",
  "serde",
 ]
 
@@ -2117,7 +2141,7 @@ dependencies = [
  "num-traits",
  "oid",
  "picky-asn1 0.3.3",
- "picky-asn1-x509",
+ "picky-asn1-x509 0.6.1",
  "regex",
  "serde",
  "tss-esapi-sys",
